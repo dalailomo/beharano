@@ -1,0 +1,5 @@
+asset/**
+!asset/.gitkeep
+bin/
+vendor/
+composer.lock
