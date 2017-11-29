@@ -1,0 +1,9 @@
+{
+  "config": {
+    "bin-dir": "bin/"
+  },
+  "minimum-stability": "dev",
+  "require": {
+    "dalailomo/behato": "dev-master"
+  }
+}

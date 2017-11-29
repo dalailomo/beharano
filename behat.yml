@@ -1,0 +1,17 @@
+default:
+  suites:
+    default:
+      contexts:
+        - BaseContext
+        - Devinci\DevinciExtension\Context\DebugContext:
+            asset_dump_path: '%paths.base%/asset'
+        - Devinci\DevinciExtension\Context\JavascriptContext:
+            maximum_wait: 30
+  extensions:
+    Behat\MinkExtension:
+      base_url:  ''
+      sessions:
+        default:
+          selenium2:
+            browser: phantomjs
+            wd_host: "http://localhost:8643/wd/hub"
